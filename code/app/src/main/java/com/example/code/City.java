@@ -1,20 +1,20 @@
 package com.example.code;
 
 public class City {
-    private String name;
+    private String city;
     private String province;
 
-    public City(String name, String province) {
-        this.name = name;
+    public City(String city, String province) {
+        this.city = city;
         this.province = province;
     }
 
-    public String getName() {
-        return name;
+    public String getCity() {
+        return city;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setCity(String city) {
+        this.city = city;
     }
 
     public String getProvince() {
