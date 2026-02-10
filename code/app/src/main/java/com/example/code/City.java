@@ -3,7 +3,7 @@ package com.example.code;
 /**
  * This is a class that defines a City.
  */
-public class City {
+public class City implements Comparable<City> {
     /**
      * The name of the city
      */
@@ -54,5 +54,9 @@ public class City {
         this.province = province;
     }
 
+    @Override
+    public int compareTo(City city) {
+        return this.city.compareTo(city.getCity()); // this.city refers to the city name
+    }
 }
 
